@@ -1,0 +1,8 @@
+class Leetcode1689 {
+    public int minPartitions(String n) {
+        var ans = 0;
+        for(int i = 0;i<n.length();i++)
+            ans = Math.max(ans,n.charAt(i)-'0');
+        return ans;
+    }
+}
